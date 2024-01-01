@@ -8,7 +8,7 @@ import Link from "next/link";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
 function Page() {
-    const [starImages, setStarImages] = useState([]);
+  const [starImages, setStarImages] = useState<StaticImageData[]>([]);
 
     
 const toastify=()=>{
