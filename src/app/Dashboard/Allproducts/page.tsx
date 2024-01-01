@@ -7,8 +7,10 @@ import stars from "../../../../public/stars.webp"
 import Link from "next/link";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
+import { ImageLoader } from "next/image";
+
 function Page() {
-  const [starImages, setStarImages] = useState<StaticImageData[]>([]);
+  const [starImages, setStarImages] = useState<ImageLoader[]>([]);
 
     
 const toastify=()=>{
