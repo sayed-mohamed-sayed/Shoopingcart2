@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState, useEffect } from 'react';
 import { ProductsClothes, ProductsShoes } from '@/app/data/data';
 import FilterPrice from '../Filter/ShoesPrice';

@@ -1,3 +1,6 @@
+
+"use client"
+
 import React, { useState, useEffect } from 'react';
 import { Productshome } from '@/app/data/data';
 
