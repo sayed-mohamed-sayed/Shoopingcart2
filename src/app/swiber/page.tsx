@@ -51,9 +51,9 @@ export default function App() {
         <SwiperSlide><Image className='w-screen' width={1000} height={1000} src="/3.webp" alt='Image'/>  </SwiperSlide>
         <SwiperSlide><Image className='w-screen' width={1000} height={1000} src="/9.webp" alt='Image'/>  </SwiperSlide>
         <div className="autoplay-progress" slot="container-end">
-          <svg viewBox="0 0 48 48" ref={progressCircle}>
+          {/* <svg viewBox="0 0 48 48" ref={progressCircle}>
             <circle cx="24" cy="24" r="20"></circle>
-          </svg>
+          </svg> */}
           <span ref={progressContent}></span>
         </div>
       </Swiper>
