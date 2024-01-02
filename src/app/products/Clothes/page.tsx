@@ -25,8 +25,8 @@ const toastify=()=>{
       starImagesArray.push(stars);
     }
 
-    setStarImages(starImagesArray);
-  }, []);
+    setStarImages(starImagesArray as never[])
+    }, []);
 
 
     return (
@@ -36,8 +36,8 @@ const toastify=()=>{
                </div>
         <div className="flex justify-start flex-wrap w-[80%]">
 
-            {
-                change?change.map((i:any)=>(
+        {
+  Array.isArray(change)&& change.map((i: any) => (
                     <div className="m-2 border relative border-black border-solid cursor-pointer" key={i.id}>
                     <Link href={`/products/${i.id}`}>
                 
@@ -63,8 +63,10 @@ const toastify=()=>{
                 <button className="bg-[#dcdada] m-2 pl-2 pr-2 p-[1px] rounded-sm" onClick={()=>toastify()}>اضف للسلة</button>
                 </div>
                 </div>
-                )):<div className="w-screen mt-24 text-center">جار التحميل....</div>
+                ))
             }
+            {!change && <div className="w-screen mt-24 text-center">جار التحميل....</div>}
+
             </div>
             <ToastContainer/>
         </div>

@@ -15,12 +15,15 @@ import Image from 'next/image';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export default function App() {
-  const progressCircle = useRef(null);
-  const progressContent = useRef(null);
-  const onAutoplayTimeLeft = (s, time, progress) => {
-    progressCircle.current.style.setProperty('--progress', 1 - progress);
-    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+  const progressCircle: React.MutableRefObject<HTMLElement | null> = useRef(null);
+  const progressContent: React.MutableRefObject<HTMLElement | null> = useRef(null);  
+  const onAutoplayTimeLeft = (s:any, time:number, progress:any) => {
+    if (progressCircle.current && progressContent.current) {
+      progressCircle.current.style.setProperty('--progress', String(1 - progress));
+      progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+    }
   };
+  
   return (
     <>
       <Swiper

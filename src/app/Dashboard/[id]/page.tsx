@@ -7,7 +7,6 @@ function Page({params}:any) {
     const data =products.filter((i)=>i.id==params.id)
     const [title ,settitle]=useState("")
   
-    console.log(data);
     
     return (
         <div>

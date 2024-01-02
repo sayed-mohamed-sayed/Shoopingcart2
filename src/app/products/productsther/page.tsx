@@ -22,7 +22,7 @@ for (let i = 0; i < 5; i++) {
 starImagesArray.push(stars);
 }
 
-setStarImages(starImagesArray);
+setStarImages(starImagesArray as never[])
 }, []);
 
 return (

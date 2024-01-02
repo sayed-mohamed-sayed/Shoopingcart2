@@ -24,18 +24,18 @@ const [plus ,setplus]=useState(1)
         <div className="flex flex-col  sm:flex sm:flex-row ">
             <div className="flex items-start ">
                 <div className="img1">
-                <Image width={400} height={400} src={img} alt="image"/>
+                <Image width={400} height={400} src={img||''} alt="image"/>
                 </div>
                 <div className="img mr-2">
-                <Image onClick={()=>setimg(data&&data.img)} className="m-[2px] cursor-pointer" width={130} height={130} src={data&&data.img} alt="image"/>
-                <Image onClick={()=>setimg(data&&data.img)} className="m-[2px] cursor-pointer" width={130} height={130} src={data&&data.img} alt="image"/>
-                <Image onClick={()=>setimg(cart)} className="m-[2px] cursor-pointer" width={130} height={130} src={cart} alt="image"/>
+                <Image onClick={()=>setimg(data&&data.img)} className="m-[2px] cursor-pointer" width={130} height={130} src={data&&data.img||''} alt="image"/>
+                <Image onClick={()=>setimg(data&&data.img)} className="m-[2px] cursor-pointer" width={130} height={130} src={data&&data.img||''} alt="image"/>
+                <Image onClick={()=>setimg(cart.src)} className="m-[2px] cursor-pointer" width={130} height={130} src={cart} alt="image"/>
                 </div>
             </div>
             <div className="w-[100%] flex flex-col mt-16 sm:mt-0">
 <div className="flex justify-start items-start w-[100%] h-6 relative font-bold text-lg mr-4">
 <h1>{data&&data.title}</h1>
-<h2 className="absolute right-[200px]">{data.price*plus} جنية</h2>
+<h2 className="absolute right-[200px]">{data&&data.price*plus} جنية</h2>
 
 </div>
            <div className="flex justify-start items-center mt-4 w-[100%]   font-bold text-lg mr-4">

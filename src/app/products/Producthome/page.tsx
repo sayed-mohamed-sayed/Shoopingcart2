@@ -24,7 +24,7 @@ const toastify=()=>{
       starImagesArray.push(stars);
     }
 
-    setStarImages(starImagesArray);
+    setStarImages(starImagesArray as never[])
   }, []);
 
 
@@ -36,7 +36,7 @@ const toastify=()=>{
         <div className="flex justify-start flex-wrap w-[80%]">
 
             {
-                change?change.map((i:any)=>(
+               Array.isArray(change)?change.map((i:any)=>(
                     <div className="m-2 border relative border-black border-solid cursor-pointer" key={i.id}>
                     <Link href={`/products/${i.id}`}>
                 

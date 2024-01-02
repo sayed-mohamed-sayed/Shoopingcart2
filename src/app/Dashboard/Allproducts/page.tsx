@@ -7,24 +7,23 @@ import stars from "../../../../public/stars.webp"
 import Link from "next/link";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
-// import { ImageLoader } from "next/image";
 
 function Page() {
-  // const [starImages, setStarImages] = useState<ImageLoader[]>([]);
+  const [starImages, setStarImages] = useState([]);
 
     
 const toastify=()=>{
     toast.error("تم حذف المنتج" ,{position:toast.POSITION.TOP_RIGHT})
 }
-  // useEffect(() => {
-  //   const starImagesArray = [];
+  useEffect(() => {
+    const starImagesArray = [];
 
-  //   for (let i = 0; i < 5; i++) {
-  //     starImagesArray.push(stars);
-  //   }
+    for (let i = 0; i < 5; i++) {
+      starImagesArray.push(stars);
+    }
 
-  //   setStarImages(starImagesArray);
-  // }, []);
+    setStarImages(starImagesArray as never[])
+  }, []);
 
 
     return (
@@ -41,14 +40,14 @@ const toastify=()=>{
                 <Image className="w-[250px] h-[300px]" width={300} height={300} src={i.img} alt="Image" />
                 <h1 className="pr-2">{i.title}</h1>
                 <div className="flex justify-center p-1">
-                {/* {
+                {
                 starImages&&starImages.map((i,o)=>(
                 <div className="cursor-pointer" key={o}>
                 
                 <Image width={20} height={20} src={i} alt="Image"/>
                 </div>
                 ))
-                } */}
+                }
                 </div>
                 <div className="flex text-center justify-center relative">
                 <h1 className=" m-2">{i.price} جنية</h1>
