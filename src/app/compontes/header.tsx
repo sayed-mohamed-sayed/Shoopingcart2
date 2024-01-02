@@ -7,7 +7,6 @@ import { useState } from "react";
 export default function Header () {
     
 const [toggle ,settoggle]=useState(false)
-console.log(toggle);
 
 
     return (
@@ -48,7 +47,7 @@ console.log(toggle);
 </label>
 
 </div>
-          <div style={{height:toggle&&"200px"}} className="flex justify-start items-start card">
+          <div style={{height:toggle?"200px":undefined}} className="flex justify-start items-start card">
             {
                 header&&header.map((i)=>(
                     <div key={i.id} className="bg-[#2e3e5b] text-white ml-4 font-bold cards relative right-2 ">
