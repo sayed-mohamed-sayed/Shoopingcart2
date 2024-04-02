@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { products } from "@/app/[locale]/data/data";
 import { useState,useEffect } from "react";
-import stars from "../../../../public/stars.webp"
+import stars from "../../../../../public/stars.webp"
 // import Filterproduct from "../Filter/filterproduct/page"
 import Link from "next/link";
 import 'react-toastify/dist/ReactToastify.css';
