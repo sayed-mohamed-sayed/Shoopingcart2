@@ -24,7 +24,7 @@ function Page() {
 
 
     return (
-        <div className="mt-20 dark:bg-black pt-2">
+        <div className="mt-20 dark:mt-0 dark:bg-black pt-2">
             <div className="w-screen "></div>
             <h1 className=" text-start mr-10 text-lg font-bold animate__animated animate__bounce  dark:text-white">{y("title")}<span className="text-[red]"></span></h1>
             <div className="flex justify-center flex-wrap ">
@@ -34,7 +34,7 @@ function Page() {
                         <div className="m-2 border relative border-black border-solid cursor-pointer dark:border-white bg-[#eee] p-[1px]" key={i.id}>
 <Link href={{
   pathname: '/products/[id]',
-  params: {id:i.id}
+  params: {id:t(`${i}.id`)}
 }}>
                             <div className="absolute w-[80px] h-[80px] top-2 right-2 bg-red-500 rounded-full flex justify-center items-center flex-col text-white font-bold  dark:bg-black">
                                 <span>{y("offer")}</span>

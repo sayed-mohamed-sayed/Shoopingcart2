@@ -6,7 +6,7 @@ import Lang from "../../products/offers/page";
 function page() {
     return (
         <>
-<div className="h-[270px] overflow-hidden">
+<div className="h-[250px] overflow-hidden">
 
             <Swiper/>
 </div>

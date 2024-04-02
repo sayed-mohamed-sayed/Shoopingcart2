@@ -34,15 +34,15 @@ function ProductOther() {
 
     return (
         <div className="dark:bg-black mt-20">
-            <div className=" dark:text-white dark:bg-black bg-[#dcdada] w-screen mb-10">
+            <div className=" dark:text-white dark:bg-black bg-[#dcdada] w-[100%] mb-10">
 
-                <h1 className={`  font-bold text-[20px] relative ${locale === "ar" ? 'right-6' : 'left-6'}`}>{locale === "ar" ? 'منتجات مشابهة لمنتجك' : 'other card'}</h1>
+                <h1 className={`  font-bold text-[20px] relative ${locale === "ar" ? 'right-[20px]' : 'left-3'}`}>{locale === "ar" ? 'منتجات مشابهة لمنتجك' : 'other card'}</h1>
             </div>
             <div className="flex justify-center flex-wrap ">
 
                 {
                     product.map((i: any) => (
-                        <div className="dark:border-white bg-[#e6e6e6] p-[1px] m-2 border relative border-black border-solid cursor-pointer" key={i.id}>
+                        <div className="dark:border-white bg-[#e6e6e6] text-black p-[1px] m-2 border relative border-black border-solid cursor-pointer" key={i.id}>
 <Link href={{
   pathname: '/products/[id]',
   params: {id:i.id}

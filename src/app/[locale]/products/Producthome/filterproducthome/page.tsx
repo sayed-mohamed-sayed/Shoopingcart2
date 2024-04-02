@@ -22,22 +22,23 @@ export default function FilterProducthome({ setchange }: any) {
       title: locale === "ar" ? "للمطبخ" : "Kitchen"
     }
   ])
+  const [datas,setdatas]=useState(locale==="ar"?Productshome:Productshome_en)
 
 
   useEffect(() => {
 
-    const filteredProducts =locale==="ar"?Productshome:Productshome_en.filter((product) => {
+    const filteredProducts =datas.filter((product) => {
       return product.type.includes(selectedPrice)
     });
 
     setchange(filteredProducts);
     selectedPrice
-  }, []);
+  }, [selectedPrice]);
 
   const handlePriceChange = (event: any) => {
 
     const price = (event.target.value);
-    const filteredProducts = Productshome.filter((product) => {
+    const filteredProducts =datas.filter((product) => {
 
       return product.type.includes(price);
     });
@@ -48,7 +49,7 @@ export default function FilterProducthome({ setchange }: any) {
 
   return (
     <div>
-      <div className="dark:bg-black dark:text-white dark:border-solid border dark:border-white w-[110px] sm:w-[140px] relative  bg-[whitesmoke] p-2 font-medium">
+      <div className="dark:bg-black dark:text-white dark:border-solid border dark:border-white overflow-hidden w-[110px] sm:w-[140px] relative  bg-[whitesmoke] p-2 font-medium">
       {locale==="ar"?<h1 className='mb-4 font-bold'>فلتر حسب النوع </h1>
 :<h1 className='mb-4 font-bold'>fillter categroy</h1>
 }         {

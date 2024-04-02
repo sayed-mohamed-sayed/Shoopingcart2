@@ -45,7 +45,7 @@ const locale=useLocale()
 
   return (
     <div>
-      <div className="dark:bg-black dark:text-white dark:border-solid border dark:border-white w-[110px] sm:w-[140px] relative  bg-[whitesmoke] p-2 font-medium">
+      <div className="dark:bg-black dark:text-white dark:border-solid border dark:border-white overflow-hidden w-[110px] sm:w-[140px] relative  bg-[whitesmoke] p-2 font-medium">
       {locale==="ar"?<h1 className='mb-4 font-bold'>فلتر حسب السعر </h1>
 :<h1 className='mb-4 font-bold'>fillter price</h1>
 }         <div className="m-1">

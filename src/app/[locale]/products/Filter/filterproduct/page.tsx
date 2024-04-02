@@ -24,13 +24,15 @@ export default function FilterProduct({ setchange }: any) {
 
   ]);
 
+  const [datas,setdatas]=useState(locale==="ar"? products:products_en)
+
   useEffect(() => {
-    const filteredProducts = locale==="ar"? products:products_en.filter((product) => {
+    const filteredProducts = datas.filter((product) => {
       return product.type.includes(selectedCategroy)
     });
 
     setchange(filteredProducts);
-  }, []);
+  }, [selectedCategroy]);
 
   const handlePriceChange = (event: any) => {
     
@@ -46,7 +48,7 @@ export default function FilterProduct({ setchange }: any) {
 
   return (
     <div>
-      <div className="dark:bg-black dark:text-white dark:border-solid border dark:border-white w-[110px] sm:w-[140px] relative  bg-[whitesmoke] p-2 font-medium">
+      <div className="dark:bg-black dark:text-white dark:border-solid border dark:border-white overflow-hidden w-[110px] sm:w-[140px] relative  bg-[whitesmoke] p-2 font-medium">
       {locale==="ar"?<h1 className='mb-4 font-bold'>فلتر حسب النوع </h1>
 :<h1 className='mb-4 font-bold'>fillter categroy</h1>
 }           {

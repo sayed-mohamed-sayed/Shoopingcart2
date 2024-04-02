@@ -56,7 +56,7 @@ export default function Header({ register, contact, search, home, elect, house, 
                         <ChangeLangage/>
                     </div>
             </div>
-            <div className=" w-[100%] mb-4 relative  bg-[#2e3e5b] h-[40px] pt-1 dark:bg-black" >
+            <div className=" w-[100%] mb-4 dark:mb-0 dark:border-solid border-b border-white relative  bg-[#2e3e5b] h-[40px] pt-1 dark:bg-black" >
                 <div className={`toggles ${locel==="en"&&"absolute left-2"}`}>
                     <input type="checkbox" id="checkbox" />
                     <label onClick={() => settoggle(!toggle)} htmlFor="checkbox" className="toggle">
@@ -66,7 +66,7 @@ export default function Header({ register, contact, search, home, elect, house, 
                     </label>
 
                 </div>
-                <div style={{ height: toggle ? "200px" : undefined }} className="flex justify-start items-start card">
+                <div style={{ height: toggle ? "200px" : undefined }} className={`flex justify-start items-start card ${locel==="en"&&'bottom-[-35px]'}`}>
 
                     <div className="bg-[#2e3e5b] dark:bg-black  text-white font-bold cards relative right-2 ">
                    

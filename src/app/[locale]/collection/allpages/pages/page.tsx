@@ -7,8 +7,8 @@ function Page() {
     const t=useTranslations("product")
      const keys=['mobil','lap','clock','furnutre','shose','shosesport','clothessport','tagmel','gamechild'] as const
     return (
-        <div className="dark:bg-black w[100%] dark:pb-4">
-        <div className="flex justify-center text-center items-center w-[80%] flex-wrap m-auto gap-4 bg-[#e6e6e6] dark:bg-black mt-10 pt-2">
+        <div className="dark:bg-black w[100%] dark:pb-4 ">
+        <div className="flex justify-center text-center items-center w-[80%] flex-wrap m-auto gap-4 bg-[#e6e6e6] dark:bg-black mt-10 dark:mt-0 pt-2">
             {
                 keys.map((i)=>(
                     <div className="w-30% cursor-pointer" key={i}>
@@ -20,7 +20,7 @@ function Page() {
 
 
         </div>
-
+<div className="dark:border-solid border dark:border-white dark:mt-4 dark:w-[90%]  m-auto"></div>
         </div>
     );
 };

@@ -258,7 +258,6 @@ body {
     overflow: hidden;
     position: relative;
     z-index: 2;
-    bottom: -2px;
   }
   .card li{
     font-size: larger;

@@ -27,7 +27,7 @@ const toastify=()=>{
 
 
     return (
-            <div className="dark:bg-black flex justify-start  mt-10 relative">
+            <div className="dark:bg-black flex justify-start  mt-10 dark:mt-0 relative">
                <div className="w-[200px] relative mt-2 flex">
 <FilterProduct setchange={setchange}/>
                </div>

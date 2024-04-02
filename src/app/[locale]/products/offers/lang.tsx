@@ -17,9 +17,11 @@
 import { useState,useEffect } from "react";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
+import { useLocale } from "next-intl";
 function Lang({addcart,buynow}:any) {
+    const locale=useLocale()
 const toastify=()=>{
-    toast.success("تم اضافة المنتج الي سلة المشتريات " ,{position:toast.POSITION.TOP_RIGHT})
+    toast.success(locale==="ar"?"تم اضافة المنتج الي سلة المشتريات ":"The product has been added to the buyer" ,{position:toast.POSITION.TOP_RIGHT})
 }
 
 return (

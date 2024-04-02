@@ -12,10 +12,10 @@ const l = useTranslations("clothes")
 const o = useTranslations("child")
 
 return (
-<div className="text-[#3f4042] bg-[#f8f5f5] relative w-[100%] overflow-hidden">
+<div className="text-[#3f4042] bg-[#f8f5f5] relative w-[100%]  overflow-hidden">
 <Image className=" w-[100%] h-[300px]" width={200} height={200} src="/foter.jpg" alt="Image" />
 
-<div className="flex justify-start w-screen absolute top-0">
+<div className="flex justify-start w-[100%] absolute top-0">
 <div className="m-2 sm:m-6 cursor-pointer">
 <h1 className="text-[25px] font-bold">{t("header")}</h1>
 <p>{t("title1")}</p>
@@ -36,8 +36,8 @@ return (
 <Image className="w-[40px] sm:w-[60px] h-[60px]" src="/phone.png" width={50} height={50} alt="Image" />
 </div>
 </div>
-<div className="flex items-start flex-wrap justify-start w-screen bg-[#2e3e5b] dark:bg-black">
-<div className="  relative text-white pr-4 ">
+<div className="flex items-start flex-wrap justify-start w-[100%] bg-[#2e3e5b] dark:bg-black">
+<div className="  relative text-white pr-4 ml-5 ">
 <h1 className="font-bold text-[20px] text-[#e6c52f]">{y("header")}</h1>
 <div className="grid grid-cols-2 gap-0">
 
@@ -64,7 +64,7 @@ return (
 
 </div>
 </div>
-<div className="w-[150px]  relative text-white pr-4 ">
+<div className="w-[150px]  relative text-white pr-4 ml-5">
 <h1 className="font-bold text-[20px] text-[#e6c52f]">{s("header")}</h1>
 <div className="grid grid-cols-1 gap-0">
 
@@ -79,7 +79,7 @@ return (
 <div >{s("title9")}</div>
 </div>
 </div>
-<div className=" w-[150px] relative text-white pr-4">
+<div className=" w-[150px] relative text-white pr-4 ml-5 ">
 <h1 className="font-bold text-[20px] text-[#e6c52f]">{m("header")}</h1>
 <div className="grid grid-cols-1 gap-0">
 <div >{m("title1")}</div>
@@ -90,7 +90,7 @@ return (
 <div >{m("title6")}</div>
 </div>
 </div>
-<div className=" w-[150px]  relative text-white pr-4 ">
+<div className=" w-[150px]  relative text-white pr-4  ml-5">
 <h1 className="font-bold text-[19px] text-[#e6c52f]">{l("header")}</h1>
 <div className="grid grid-cols-1 gap-0">
 <div >{l("title1")}</div>
@@ -102,7 +102,7 @@ return (
 </div>
 </div>
 
-<div className=" w-[150px]  relative text-white pr-4 ">
+<div className=" w-[150px]  relative text-white pr-4  ml-5">
 <h1 className="font-bold text-[20px] text-[#e6c52f]">{o("header")}</h1>
 <div className="grid grid-cols-1 gap-0">
 <div >{o("title1")}</div>

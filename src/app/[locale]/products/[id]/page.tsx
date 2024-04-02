@@ -30,16 +30,16 @@ const [plus ,setplus]=useState(1)
                 <div className="img1">
                 <Image width={400} height={400} src={img||''} alt="image"/>
                 </div>
-                <div className="img mr-2">
+                <div className="img mr-2 overflow-hidden" >
                 <Image onClick={()=>setimg(data&&data.img )} className="m-[2px] cursor-pointer" width={130} height={130} src={data&&data.img||''} alt="image"/>
                 <Image onClick={()=>setimg(data&&data.img)} className="m-[2px] cursor-pointer" width={130} height={130} src={data&&data.img||''} alt="image"/>
                 <Image onClick={()=>setimg(cart.src)} className="m-[2px] cursor-pointer" width={130} height={130} src={cart} alt="image"/>
                 </div>
             </div>
-            <div className="w-[100%] flex flex-col mt-16 sm:mt-0">
+            <div className={`w-[100%] flex flex-col mt-16 sm:mt-0 ${locale==="en"&&'ml-[5px]'}`}>
 <div className="flex justify-start items-start w-[100%] h-6 relative font-bold text-lg mr-4">
 <h1>{data&&data.title}</h1>
-<h2 className="absolute right-[200px]">{data&&data.price*plus} {locale==="ar"?'جنية':'pound'}</h2>
+<h2 className={`absolute  ${locale==="ar"?'right-[200px]':'left-[200px]'}`}>{data&&data.price*plus} {locale==="ar"?'جنية':'pound'}</h2>
 
 </div>
            <div className="flex justify-start items-center mt-4 w-[100%]   font-bold text-lg mr-4">
@@ -60,10 +60,10 @@ const [plus ,setplus]=useState(1)
             </div>
         </div>
         <div className="font-bold mt-10 dark:mt-0 dark:bg-black dark:text-white">
-            <h1 className="text-xl">{locale==="ar"?'وصف المنتج ':'details card'}</h1>
+            <h1 className={`text-xl ${locale==="en"&&'ml-[5px]'}`}>{locale==="ar"?'وصف المنتج ':'details card'}</h1>
             {locale==="ar"?
 <p>منتج عالي الجودة تم شراء اكثر من 100 مرة  وكلي التقيمات ايجابية بالضافة الي سعرة االميز </p>
-:<p>details card .................</p>
+:<p className="ml-[5px]">details card .................</p>
 
             }
 <ProductOther/>
