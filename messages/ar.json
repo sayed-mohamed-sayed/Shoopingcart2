@@ -1,0 +1,228 @@
+{
+  "register": {
+    "title": "تسجيل الدخول"
+  },
+  "contact": {
+    "title": "تواصل معنا"
+  },
+  "search": {
+    "title": "ابحث عن ما تريد"
+  },
+  "header": {
+    "home": "الصفحة الرئيسية ",
+    "elect": "الاكترونيات",
+    "house": "مستلزمات المنزل",
+    "clothes": "ملابس",
+    "shoes": "احذية"
+  },
+
+  "linkproduct": {
+    "mobil": {
+      "title": "التليفونات ",
+      "img": "/mopil.webp",
+      "url": "/products/control"
+    },
+    "lap": {
+      "title": "اللابتوب",
+      "img": "/laptop.webp",
+      "url": "/products/control"
+    },
+    "clock": {
+      "title": "الساعات",
+      "img": "/watch.webp",
+      "url": "/products/control"
+    },
+    "furnutre": {
+      "title": "الاثاث",
+      "img": "/chair.webp",
+      "url": "/products/Producthome"
+    },
+    "shose": {
+      "title": "الاحذية",
+      "img": "/shoes.webp",
+      "url": "/products/Shoes"
+    },
+    "shosesport": {
+      "title": "احذية رياضة",
+      "img": "/shoessport.webp",
+      "url": "/products/Shoes"
+    },
+    "clothessport": {
+      "title": "ملابس",
+      "img": "/clothessport.webp",
+      "url": "/products/Clothes"
+    },
+    "tagmel": {
+      "title": "مستحضرات تجميل",
+      "img": "/beytifull.webp",
+      "url": "/"
+    },
+    "gamechild": {
+      "title": "لعب اطفال",
+      "img": "/games.avif",
+      "url": "/"
+    }
+  },
+
+  "product": {
+    "mobil": {
+      "id":"1",
+      "title": "التليفونات ",
+      "img": "/mopil.webp",
+      "url": "/products/control",
+      "price":"88",
+      "offer":"10",
+      "priceoffer":"100"
+    },
+    "lap": {
+      "id":"2",
+      "title": "اللابتوب",
+      "img": "/laptop.webp",
+      "url": "/products/control",
+      "price":"88",
+      "offer":"10",
+      "priceoffer":"100"
+    },
+    "clock": {
+      "id":"3",
+      "title": "الساعات",
+      "img": "/watch.webp",
+      "url": "/products/control",
+      "price":"88",
+      "offer":"10",
+      "priceoffer":"100"
+    },
+    "furnutre": {
+      "id":"4",
+      "title": "الاثاث",
+      "img": "/chair.webp",
+      "url": "/products/Producthome",
+      "price":"88",
+      "offer":"10",
+      "priceoffer":"100"
+    },
+    "shose": {
+      "id":"5",
+      "title": "الاحذية",
+      "img": "/shoes.webp",
+      "url": "/products/Shoes",
+      "price":"88",
+      "offer":"10",
+      "priceoffer":"100"
+    },
+    "shosesport": {
+      "id":"6",
+      "title": "احذية رياضة",
+      "img": "/shoessport.webp",
+      "url": "/products/Shoes",
+      "price":"88",
+      "offer":"10",
+      "priceoffer":"100"
+    },
+    "clothessport": {
+      "id":"7",
+      "title": "ملابس",
+      "img": "/clothessport.webp",
+      "url": "/products/Clothes",
+      "price":"88",
+      "offer":"10",
+      "priceoffer":"100"
+    },
+    "tagmel": {
+      "id":"8",
+      "title": "مستحضرات تجميل",
+      "img": "/beytifull.webp",
+      "url": "/",
+      "price":"88",
+      "offer":"10",
+      "priceoffer":"100"
+    },
+    "gamechild": {
+      "id":"9",
+      "title": "لعب اطفال",
+      "img": "/games.avif",
+      "url": "/",
+      "price":"88",
+      "offer":"10",
+      "priceoffer":"100"
+    }
+  },
+  "foroffer":{
+    "title":"عروض كبيرة لمدة 24ساعة فقط",
+    "offerprice":"بدلا من ",
+    "pound":"جنية",
+    "offer":"خصم",
+    "addcart":"اضف للسلة",
+    "buynow":"شراء الان"
+  }, 
+  "footer": {
+    "header": "دعنا نساعدك ",
+    "title1": "الحساب الخاص بك",
+    "title2": "طلباتك    ",
+    "title3": "سياسات التوصيل    ",
+    "title4": "سياسة الإرجاع والاستبدال    ",
+    "title5": "اتفاقية المستخدم    ",
+    "contact":"تواصل معنا علي    "
+  },
+  "elect":{
+    "header":"الكترونيات    ",
+    "title1":"هواتف ذكية",
+    "title2":"ملحقات الهواتف الذكية",
+    "title3":"أغطية الهاتف",
+    "title4":"ساعات ذكية",
+    "title5": "أساور اللياقة البدنية",
+    "title6": "ملحقات الساعات الذكية",
+    "title7": "ملحقات الحاسوب",
+    "title8": "كوابل",
+    "title9": "شواحن",
+    "title10": "بطاريات شحن",
+    "title11":   "سماعات ومكبرات صوت",
+    "title12": "معدات التصوير",
+    "title13":  "ذاكرات التخزين",
+    "title14": "الألعاب الإلكترونية وملحقاتها",
+    "title15":   "أجهزة الراوتر",
+    "title16":   "موزع شبكة",
+    "title17":  "أدوات تنظيف الأجهزة المحمولة",
+    "title18":  "الكاميرات",
+    "title19":   "أجهزة لوحية"
+  },
+  "home":{
+    "header":"المنزل",
+    "title1":"اجهزة كهربائية",
+    "title2":" المطبخ ",
+    "title3":" الحمام ",
+    "title4":" الاثاث",
+    "title5": " المفروشات ",
+    "title6": "  الانارة",
+    "title7": " الزينة والديكور",
+    "title8": "تخزين وتنظيم",
+    "title9": "منظفات المنزل"
+  },
+  "butefull":{
+    "header":"الجمال والعطور",
+    "title1":"العطور ",
+    "title2":"مكياج",
+    "title3":"العناية بالبشرة",
+    "title4":"العناية الشخصية",
+    "title5": "العناية بالاظافر",
+    "title6": "العناية بالاسنان"
+   
+  },
+  "clothes":{
+    "header":"ملابس واكسسوارات",
+    "title1":"ملابس نسائية  ",
+    "title2":"ملابس رجالية ",
+    "title3":"اكسسوارات نسائية ",
+    "title4":"اكسسوارات رجالية",
+    "title5": "حقائب"   
+  },
+  "child":{
+    "header":"اطفال",
+    "title1":" مستلزمات العناية بالطفال ",
+    "title2":"  اثاث",
+    "title3":"  ملابس بالطفال",
+    "title4":"  لعب اطفال"
+   
+  }
+ 
+}

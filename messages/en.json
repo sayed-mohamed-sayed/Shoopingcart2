@@ -1,0 +1,223 @@
+{
+  "register": {
+    "title": "register"
+  },
+  "contact": {
+    "title": "contact"
+  },
+  "search": {
+    "title": "Search"
+  },
+  "header": {
+    "home": "Home",
+    "elect": "Electronic",
+    "house": "House",
+    "clothes": "Clothes",
+    "shoes": "Shoes"
+  },
+  "linkproduct": {
+    "mobil": {
+      "title": "mobil",
+      "img": "/mopil.webp",
+      "url": "/products/control"
+    },
+    "lap": {
+      "title": "laptop",
+      "img": "/laptop.webp",
+      "url": "/products/control"
+    },
+    "clock": {
+      "title": "clock",
+      "img": "/watch.webp",
+      "url": "/products/control"
+    },
+    "furnutre": {
+      "title": "furnutre",
+      "img": "/chair.webp",
+      "url": "/products/Producthome"
+    },
+    "shose": {
+      "title": "shoes",
+      "img": "/shoes.webp",
+      "url": "/products/Shoes"
+    },
+    "shosesport": {
+      "title": "shoessport",
+      "img": "/shoessport.webp",
+      "url": "/products/Shoes"
+    },
+    "clothessport": {
+      "title": "clothes",
+      "img": "/clothessport.webp",
+      "url": "/products/Clothes"
+    },
+    "tagmel": {
+      "title": "tagmel",
+      "img": "/beytifull.webp",
+      "url": "/"
+    },
+    "gamechild": {
+      "title": "gamechild",
+      "img": "/games.avif",
+      "url": "/"
+    }
+  },
+  "product": {
+    "mobil": {
+      "id": "1",
+      "title": "mobil",
+      "img": "/mopil.webp",
+      "url": "/products/control",
+      "price": "88",
+      "offer": "10",
+      "priceoffer": "100"
+    },
+    "lap": {
+      "id": "2",
+      "title": "laptop",
+      "img": "/laptop.webp",
+      "url": "/products/control",
+      "price": "199",
+      "offer": "10",
+      "priceoffer": "170"
+    },
+    "clock": {
+      "id": "3",
+      "title": "clock",
+      "img": "/watch.webp",
+      "url": "/products/control",
+      "price": "88",
+      "offer": "10",
+      "priceoffer": "100"
+    },
+    "furnutre": {
+      "id": "4",
+      "title": "furnutre",
+      "img": "/chair.webp",
+      "url": "/products/Producthome",
+      "price": "88",
+      "offer": "10",
+      "priceoffer": "100"
+    },
+    "shose": {
+      "id": "5",
+      "title": "shoes",
+      "img": "/shoes.webp",
+      "url": "/products/Shoes",
+      "price": "300",
+      "offer": "10",
+      "priceoffer": "280"
+    },
+    "shosesport": {
+      "id": "6",
+      "title": "shoessport",
+      "img": "/shoessport.webp",
+      "url": "/products/Shoes",
+      "price": "200",
+      "offer": "10",
+      "priceoffer": "180"
+    },
+    "clothessport": {
+      "id": "7",
+      "title": "clothes",
+      "img": "/clothessport.webp",
+      "url": "/products/Clothes",
+      "price": "88",
+      "offer": "10",
+      "priceoffer": "100"
+    },
+    "tagmel": {
+      "id": "8",
+      "title": "tagmel",
+      "img": "/beytifull.webp",
+      "url": "/",
+      "price": "90",
+      "offer": "12",
+      "priceoffer": "100"
+    },
+    "gamechild": {
+      "id": "9",
+      "title": "gamechild",
+      "img": "/games.avif",
+      "url": "/",
+      "price": "120",
+      "offer": "15",
+      "priceoffer": "150"
+    }
+  },
+  "foroffer": {
+    "title": "Great offers for 24 hours only",
+    "offerprice": "instead of",
+    "pound": "pound",
+    "offer": "offer",
+    "addcart": "add cart",
+    "buynow": "buy now"
+  },
+  "footer": {
+    "header": "Let us help you",
+    "title1": "Your Account",
+    "title2": "Your Requests",
+    "title3": "Delivery Policies",
+    "title4": "Return and Exchange Policy",
+    "title5": "User Agreement",
+    "contact":"Contact us on"
+  },
+  "elect": {
+    "header": "Electronics",
+    "title1": "Smartphones",
+    "title2": "Smartphone Accessories",
+    "title3": "Phone Cases",
+    "title4": "Smart Watches",
+    "title5": "Fitness Bracelets",
+    "title6": "Smartwatch Accessories",
+    "title7": "Computer Accessories",
+    "title8": "Cables",
+    "title9": "Chargers",
+    "title10": "Charging Batteries",
+    "title11": "Headphones and Speakers",
+    "title12": "Photography Equipment",
+    "title13": "Storage Devices",
+    "title14": "Electronic Games and Accessories",
+    "title15": "Routers",
+    "title16": "Network Distributors",
+    "title17": "Portable Device Cleaning Tools",
+    "title18": "Cameras",
+    "title19": "Tablets"
+  },
+    "home": {
+      "header": "Home",
+      "title1": "Electrical Appliances",
+      "title2": "Kitchen",
+      "title3": "Bathroom",
+      "title4": "Furniture",
+      "title5": "Furnishings",
+      "title6": "Lighting",
+      "title7": "Decor and Decoration",
+      "title8": "Storage and Organization",
+      "title9": "Household Cleaners"
+    
+  },"butefull":{
+    "header":"Beauty and Perfumes",
+    "title1":"Perfumes",
+    "title2":"Makeup",
+    "title3":"Skin care",
+    "title4":"Personal Care",
+    "title5": "Nail Care",
+    "title6": "Dental Care"
+  
+  },"clothes":{
+    "header":"Clothes and accessories",
+    "title1":"Women's clothing",
+    "title2":"Men's Clothing",
+    "title3":"Women's Accessories",
+    "title4":"Men's Accessories",
+    "title5": "Bags"
+  },"child":{
+    "header":"children",
+    "title1":"Baby care supplies",
+    "title2":"Furniture",
+    "title3":"Children's clothes",
+    "title4":"Children's toys"
+  
+  }
+}
