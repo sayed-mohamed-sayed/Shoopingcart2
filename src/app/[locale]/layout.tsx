@@ -41,6 +41,8 @@ import Footer from './compontes/footer'
 import {useLocale} from 'next-intl';
 import Navpar from './compontes/Navpar'
 import { DarkProvider } from '../themeProvider';
+import { Suspense } from 'react';
+import Loading from './loading';
 
 // تهيئة خيارات الخط
 const inter = Inter({ subsets: ['latin'] })
@@ -67,9 +69,13 @@ export default function RootLayout({ children, locale }: RootLayoutProps) {
     <html lang={locale} dir={local==="ar"?'rtl':'ltr'}>
       <body className={inter.className}>
       <DarkProvider>
+
         <Navpar />
+        <Suspense fallback={<Loading/>}>
         {children}
+        </Suspense>
         <Footer />
+
 
       </DarkProvider>
       </body>

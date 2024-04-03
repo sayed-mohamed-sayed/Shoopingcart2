@@ -12,8 +12,8 @@ function Page() {
             {
                 keys.map((i)=>(
                     <div className="w-30% cursor-pointer" key={i}>
-                        <Image className="w-[250px] h-[200px] border-b" width={200} height={200} src={t(`${i}.img`)} alt="Image"/>
-                        <h1 className="bg-white font-bold rounded-b-sm ">{t(`${i}.title`)}</h1>
+                        <Image className=" w-[250px] h-[200px] border-b" width={200} height={200} src={t(`${i}.img`)} alt="Image"/>
+                        <h1 className=".animate__bounceOut  bg-white font-bold rounded-b-sm ">{t(`${i}.title`)}</h1>
                     </div>
                 ))
             }
